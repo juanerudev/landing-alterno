@@ -3,69 +3,73 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alterno - Personalizaciones</title>
+    <title>Alterno</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    
-    <header>
-      <h1>Alterno</h1>
-      <nav>
-        <a href="#servicios">Servicios</a>
-        <a href="#galeria">Galería</a>
-        <a href="#contacto">Contacto</a>
-      </nav>
+  <body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-white p-4 shadow">
+      <div class="flex justify-between items-center max-w-6xl mx-auto">
+        <h1 class="text-xl font-bold">Alterno</h1>
+        <nav class="space-x-4">
+          <a href="#servicios" class="text-gray-600">Servicios</a>
+          <a href="#galeria" class="text-gray-600">Galería</a>
+          <a href="#contacto" class="text-gray-600">Contacto</a>
+        </nav>
+      </div>
     </header>
-    
-    <section>
-      <h2>¡Personaliza tu mundo!</h2>
-      <p>Sublimación creativa en mugs, camisetas, termos y más.</p>
-      <a href="#contacto">Pide tu diseño ahora</a>
+
+    <section class="bg-pink-200 text-center py-16 px-4">
+      <h2 class="text-3xl font-bold mb-4">¡Personaliza tu mundo!</h2>
+      <p class="mb-6">Sublimación creativa en mugs, camisetas, termos y más.</p>
+      <a href="#contacto" class="bg-white text-pink-600 px-4 py-2 rounded">Pide tu diseño</a>
     </section>
-    
-    <section id="servicios">
-      <h2>¿Qué personalizamos?</h2>
-      <div>
-        <div>
-          <img src="..." alt="Mug personalizado" />
-          <h3>Mugs</h3>
-          <p>Con tu frase o imagen favorita.</p>
+
+    <section id="servicios" class="py-12 px-4 bg-white text-center">
+      <h2 class="text-2xl font-semibold mb-8">¿Qué personalizamos?</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div class="border p-4 rounded">
+          <img src="..." class="w-full h-32 object-cover mb-2" />
+          <h3 class="font-bold">Mugs</h3>
+          <p>Con tu frase favorita.</p>
         </div>
-        <div>
-          <img src="..." alt="Camiseta personalizada" />
-          <h3>Camisetas</h3>
-          <p>Diseños únicos o para grupos.</p>
+        <div class="border p-4 rounded">
+          <img src="..." class="w-full h-32 object-cover mb-2" />
+          <h3 class="font-bold">Camisetas</h3>
+          <p>Diseños únicos.</p>
         </div>
-        <div>
-          <img src="..." alt="Termo personalizado" />
-          <h3>Termos</h3>
-          <p>Ideales para regalos originales.</p>
+        <div class="border p-4 rounded">
+          <img src="..." class="w-full h-32 object-cover mb-2" />
+          <h3 class="font-bold">Termos</h3>
+          <p>Regalos originales.</p>
         </div>
       </div>
     </section>
-    
-    <section id="galeria">
-      <h2>Galería de Diseños</h2>
-      <div>
-        <img src="..." alt="Ejemplo 1" />
-        <img src="..." alt="Ejemplo 2" />
-        <img src="..." alt="Ejemplo 3" />
+
+    <section id="galeria" class="py-12 px-4 bg-gray-100 text-center">
+      <h2 class="text-2xl font-semibold mb-6">Galería de Diseños</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-6xl mx-auto">
+        <img src="..." class="w-full h-40 object-cover rounded" />
+        <img src="..." class="w-full h-40 object-cover rounded" />
+        <img src="..." class="w-full h-40 object-cover rounded" />
       </div>
     </section>
-    
-    <section id="contacto">
-      <h2>¡Hablemos!</h2>
-      <p>Cuentanos tu idea y la hacemos realidad 💡</p>
-      <form action="#" method="POST">
-        <input type="text" name="nombre" placeholder="Tu nombre" required />
-        <input type="email" name="email" placeholder="Tu correo" required />
-        <textarea name="mensaje" placeholder="Mensaje..." required></textarea>
-        <button type="submit">Enviar mensaje</button>
-      </form>
-      <p>También puedes escribirnos por WhatsApp.</p>
+
+    <section id="contacto" class="py-12 px-4 bg-white">
+      <div class="max-w-xl mx-auto text-center">
+        <h2 class="text-2xl font-semibold mb-4">¡Hablemos!</h2>
+        <p class="mb-6">Cuentanos tu idea 💡</p>
+        <form class="space-y-4 text-left">
+          <input type="text" placeholder="Tu nombre" class="w-full border px-3 py-2 rounded" />
+          <input type="email" placeholder="Tu correo" class="w-full border px-3 py-2 rounded" />
+          <textarea placeholder="Mensaje..." class="w-full border px-3 py-2 rounded"></textarea>
+          <button class="bg-pink-500 text-white px-4 py-2 rounded">Enviar</button>
+        </form>
+      </div>
     </section>
-    
-    <footer>
-      <p>&copy; 2025 Alterno. Todos los derechos reservados.</p>
+
+    <footer class="bg-gray-800 text-white text-center py-4">
+      <p>&copy; 2025 Alterno.</p>
     </footer>
 
   </body>
